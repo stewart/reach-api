@@ -8,6 +8,9 @@ module Reach
     require "reach/api/game"
     include Reach::API::Game
 
+    require "reach/api/player"
+    include Reach::API::Player
+
     # API endpoint
     ENDPOINT = "http://www.bungie.net/api/reach/reachapijson.svc/"
 
