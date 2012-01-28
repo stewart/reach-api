@@ -24,10 +24,7 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency "guard-rspec", "~> 0.6.0"
   gem.add_development_dependency "simplecov", "~> 0.5.4"
-  gem.add_development_dependency "webmock", "~> 1.7.10"
   gem.add_development_dependency "rspec", "~> 2.8.0"
   gem.add_development_dependency "guard", "~> 1.0.0"
   gem.add_development_dependency "rake", "~> 0.9.2.2"
-  gem.add_development_dependency "vcr", "~> 1.11.3"
-
 end
