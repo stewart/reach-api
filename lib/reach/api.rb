@@ -11,6 +11,9 @@ module Reach
     require "reach/api/player"
     include Reach::API::Player
 
+    require "reach/api/file"
+    include Reach::API::File
+
     # API endpoint
     ENDPOINT = "http://www.bungie.net/api/reach/reachapijson.svc/"
 
