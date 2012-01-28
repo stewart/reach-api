@@ -5,6 +5,9 @@ module Reach
   class API
     include HTTParty
 
+    require "reach/api/game"
+    include Reach::API::Game
+
     # API endpoint
     ENDPOINT = "http://www.bungie.net/api/reach/reachapijson.svc/"
 
