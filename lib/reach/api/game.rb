@@ -31,9 +31,9 @@ module Reach
       def get_current_challenges(gamertag = nil)
         if gamertag
           gamertag = gamertag.gsub(' ', '%20')
-          uri = ENDPOINT + "game/metadata/#{key}/#{gamertag}"
+          uri = ENDPOINT + "game/challenges/#{key}/#{gamertag}"
         else
-          uri = ENDPOINT + "game/metadata/#{key}"
+          uri = ENDPOINT + "game/challenges/#{key}"
         end
         data = JSON.parse(self.class.get(uri).body, :symbolize_names => true)
         Reach::Helper::convert_keys(data)
